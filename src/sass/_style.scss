@@ -2,7 +2,7 @@ body {
   font-size: 14px;
   font-family: Roboto, sans-serif;
   color: #212121;
-  
+
   padding: 15px 20px;
 }
 img {
@@ -49,7 +49,6 @@ li {
   transform: translate(-50%, -50%);
 }
 
-
 .loader:before {
   content: '';
   animation: 1s print linear alternate infinite;
@@ -80,43 +79,85 @@ li {
 
 @keyframes print {
   0% {
-    content: 'L'
+    content: 'L';
   }
 
   10% {
-    content: 'Lo'
+    content: 'Lo';
   }
 
   20% {
-    content: 'Loa'
+    content: 'Loa';
   }
 
   30% {
-    content: 'Load'
+    content: 'Load';
   }
 
   40% {
-    content: 'Loadi'
+    content: 'Loadi';
   }
 
   50% {
-    content: 'Loadin'
+    content: 'Loadin';
   }
 
   60% {
-    content: 'Loading'
+    content: 'Loading';
   }
 
   70% {
-    content: 'Loading.'
+    content: 'Loading.';
   }
 
   80% {
-    content: 'Loading..'
+    content: 'Loading..';
   }
 
   90%,
   100% {
-    content: 'Loading...'
+    content: 'Loading...';
   }
+}
+
+.cat-info {
+  display: flex;
+  margin-top: 20px;
+}
+
+.cat-container {
+  margin-left: 20px;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  p,
+  h3,
+  span {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  span {
+    display: flex;
+  }
+
+  #temp {
+    font-weight: 800;
+  }
+
+  h3{
+    font-weight: 400;
+  }
+}
+
+.cat-img {
+  min-width: 350px;
+  height: auto;
 }
